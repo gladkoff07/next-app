@@ -1,0 +1,14 @@
+import React from 'react'
+
+const Heading = ({
+  tag,
+  text,
+}: {
+  tag?: keyof JSX.IntrinsicElements
+  text: string
+}) => {
+  const Tag = tag || 'h1'
+  return <Tag className='mb-4 font-bold text-3xl'>{text}</Tag>
+}
+
+export default Heading
